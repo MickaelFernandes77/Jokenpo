@@ -53,8 +53,10 @@ function selectOption(option) {
     restartContainer.style.display = "block";
     restart.style.display = "block";
     // cards jogador
+    playerRock.style.display = "none";
     playerPaper.style.display = "none";
     playerScissors.style.display = "none";
+    document.getElementById("playerRockClone").style.display = "block";
   }
 
   if (option == "scissors") {
@@ -90,8 +92,10 @@ function selectOption(option) {
     restartContainer.style.display = "block";
     restart.style.display = "block";
     // cards jogador
+    playerScissors.style.display = "none";
     playerPaper.style.display = "none";
     playerRock.style.display = "none";
+    document.getElementById("playerScissorsClone").style.display = "block";
   }
 
   if (option == "paper") {
@@ -127,7 +131,9 @@ function selectOption(option) {
     restartContainer.style.display = "block";
     restart.style.display = "block";
     // cards jogador
+    playerPaper.style.display = "none";
     playerScissors.style.display = "none";
     playerRock.style.display = "none";
+    document.getElementById("playerPaperClone").style.display = "block";
   }
 }

@@ -30,6 +30,10 @@ header {
     text-transform: uppercase;
 }
 
+#playerRockClone, #playerScissorsClone, #playerPaperClone {
+    display: none;
+}
+
 main {
     background-color: #1E90FF;
     height: 100%;
