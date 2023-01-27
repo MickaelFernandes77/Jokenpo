@@ -1,0 +1,155 @@
+@media (max-width: 375px) {
+    header {
+        padding-top: 0;
+    }
+
+    #titleContainer {
+        background-color: #fff;
+        height: 80px;
+        width: 100%;
+        text-align: center;
+    }
+
+    #titleContainer>h1 {
+        margin-top: 6%;
+    }
+}
+
+@media (min-width: 375px) and (max-width: 425px) {
+    header {
+        padding-top: 0;
+    }
+
+    #titleContainer {
+        background-color: #fff;
+        height: 80px;
+        width: 100%;
+        text-align: center;
+    }
+
+    #titleContainer>h1 {
+        margin-top: 5%;
+    }
+}
+
+
+@media (min-width: 425px) and (max-width: 486px) {
+    header {
+        padding-top: 0;
+    }
+
+    #titleContainer {
+        background-color: #fff;
+        height: 80px;
+        width: 100%;
+        text-align: center;
+    }
+
+    #titleContainer>h1 {
+        margin-top: 5%;
+    }
+}
+
+@media (min-width: 486px) and (max-width: 550px) {
+    header {
+        padding-top: 0;
+    }
+
+    #titleContainer {
+        background-color: #fff;
+        height: 80px;
+        width: 100%;
+        text-align: center;
+    }
+
+    #titleContainer>h1 {
+        margin-top: 3%;
+    }
+}
+
+@media (min-width: 550px) and (max-width: 576px) {
+    header {
+        padding-top: 0;
+    }
+
+    #titleContainer {
+        background-color: #fff;
+        height: 80px;
+        width: 100%;
+        text-align: center;
+    }
+
+    #titleContainer>h1 {
+        margin-top: 3%;
+    }
+}
+
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    header {
+        padding-top: 0;
+    }
+
+    #titleContainer {
+        background-color: #fff;
+        height: 80px;
+        width: 100%;
+        text-align: center;
+    }
+
+    #titleContainer>h1 {
+        margin-top: 3%;
+    }
+}
+
+
+@media (min-width: 767.98px) and (max-width: 991.98px) {
+    header {
+        padding-top: 0;
+    }
+
+    #titleContainer {
+        background-color: #fff;
+        height: 80px;
+        width: 100%;
+        text-align: center;
+    }
+
+    #titleContainer>h1 {
+        margin-top: 1.5%;
+    }
+}
+
+@media (min-width: 991.99px) and (max-width: 1200px) {
+    header {
+        padding-top: 0;
+    }
+
+    #titleContainer {
+        background-color: #fff;
+        height: 80px;
+        width: 100%;
+        text-align: center;
+    }
+
+    #titleContainer>h1 {
+        margin-top: 1.5%;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1439px) {
+    header {
+        padding-top: 0;
+    }
+
+    #titleContainer {
+        background-color: #fff;
+        height: 80px;
+        width: 100%;
+        text-align: center;
+    }
+
+    #titleContainer>h1 {
+        margin-top: 1.5%;
+    }
+}

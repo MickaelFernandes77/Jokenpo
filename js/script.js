@@ -17,8 +17,10 @@ let restartContainer = document.getElementById("btnContainer");
 let restart = document.getElementById("restart");
 
 function selectOption(option) {
+  optionRandom = 1 + Math.floor(Math.random() * 3);
+  result.style.display = "block";
+
   if (option == "rock") {
-    optionRandom = 1 + Math.floor(Math.random() * 3);
     if (rock > optionRandom) {
       for (let i = 0; i < optionRandomElements.length; i++) {
         optionRandomElements[i].style.display = "block";
@@ -26,15 +28,8 @@ function selectOption(option) {
         optionRandomElements[1].classList.add("resultOptionRandom");
         optionRandomElements[0].style.display = "none";
         optionRandomElements[2].style.display = "none";
-        // cards jogador
-        playerPaper.style.display = "none";
-        playerScissors.style.display = "none";
       }
-      // resultado
-      result.style.display = "block";
       result.innerHTML = "Você Venceu!!!";
-      restartContainer.style.display = "block";
-      restart.style.display = "block";
     } else if (rock == optionRandom) {
       for (let i = 0; i < optionRandomElements.length; i++) {
         // cards do oponente
@@ -42,15 +37,8 @@ function selectOption(option) {
         optionRandomElements[0].classList.add("resultOptionRandom");
         optionRandomElements[1].style.display = "none";
         optionRandomElements[2].style.display = "none";
-        // cards jogador
-        playerPaper.style.display = "none";
-        playerScissors.style.display = "none";
       }
-      // resultado
-      result.style.display = "block";
       result.innerHTML = "Empate!";
-      restartContainer.style.display = "block";
-      restart.style.display = "block";
     } else if (rock < optionRandom) {
       for (let i = 0; i < optionRandomElements.length; i++) {
         optionRandomElements[i].style.display = "block";
@@ -58,50 +46,88 @@ function selectOption(option) {
         optionRandomElements[2].classList.add("resultOptionRandom");
         optionRandomElements[0].style.display = "none";
         optionRandomElements[1].style.display = "none";
-        // cards jogador
-        playerPaper.style.display = "none";
-        playerScissors.style.display = "none";
       }
-      // resultado
-      result.style.display = "block";
       result.innerHTML = "Você perdeu :(";
-      restartContainer.style.display = "block";
-      restart.style.display = "block";
     }
+    // botao restart
+    restartContainer.style.display = "block";
+    restart.style.display = "block";
+    // cards jogador
+    playerPaper.style.display = "none";
+    playerScissors.style.display = "none";
   }
 
   if (option == "scissors") {
-    optionRandom = 1 + Math.floor(Math.random() * 3);
     if (scissors > optionRandom) {
       for (let i = 0; i < optionRandomElements.length; i++) {
         optionRandomElements[i].style.display = "block";
+        // cards do oponente
         optionRandomElements[2].classList.add("resultOptionRandom");
-        optionRandomElements[0].classList.remove("resultOptionRandom");
-        optionRandomElements[1].classList.remove("resultOptionRandom");
+        optionRandomElements[0].style.display = "none";
+        optionRandomElements[1].style.display = "none";
       }
-      // resultado
-      result.style.display = "block";
       result.innerHTML = "Você Venceu!!!";
     } else if (scissors == optionRandom) {
       for (let i = 0; i < optionRandomElements.length; i++) {
+        // cards do oponente
         optionRandomElements[i].style.display = "block";
         optionRandomElements[1].classList.add("resultOptionRandom");
-        optionRandomElements[0].classList.remove("resultOptionRandom");
-        optionRandomElements[2].classList.remove("resultOptionRandom");
+        optionRandomElements[0].style.display = "none";
+        optionRandomElements[2].style.display = "none";
       }
-      // resultado
-      result.style.display = "block";
       result.innerHTML = "Empate!";
     } else if (scissors < optionRandom) {
       for (let i = 0; i < optionRandomElements.length; i++) {
         optionRandomElements[i].style.display = "block";
+        // cards do oponente
         optionRandomElements[0].classList.add("resultOptionRandom");
-        optionRandomElements[1].classList.remove("resultOptionRandom");
-        optionRandomElements[2].classList.remove("resultOptionRandom");
+        optionRandomElements[1].style.display = "none";
+        optionRandomElements[2].style.display = "none";
       }
-      // resultado
-      result.style.display = "block";
       result.innerHTML = "Você perdeu :(";
     }
+    // botao restart
+    restartContainer.style.display = "block";
+    restart.style.display = "block";
+    // cards jogador
+    playerPaper.style.display = "none";
+    playerRock.style.display = "none";
+  }
+
+  if (option == "paper") {
+    if (paper > optionRandom) {
+      for (let i = 0; i < optionRandomElements.length; i++) {
+        optionRandomElements[i].style.display = "block";
+        // cards do oponente
+        optionRandomElements[0].classList.add("resultOptionRandom");
+        optionRandomElements[1].style.display = "none";
+        optionRandomElements[2].style.display = "none";
+      }
+      result.innerHTML = "Você Venceu!!!";
+    } else if (paper == optionRandom) {
+      for (let i = 0; i < optionRandomElements.length; i++) {
+        // cards do oponente
+        optionRandomElements[i].style.display = "block";
+        optionRandomElements[2].classList.add("resultOptionRandom");
+        optionRandomElements[0].style.display = "none";
+        optionRandomElements[1].style.display = "none";
+      }
+      result.innerHTML = "Empate!";
+    } else if (paper < optionRandom) {
+      for (let i = 0; i < optionRandomElements.length; i++) {
+        optionRandomElements[i].style.display = "block";
+        // cards do oponente
+        optionRandomElements[1].classList.add("resultOptionRandom");
+        optionRandomElements[0].style.display = "none";
+        optionRandomElements[2].style.display = "none";
+      }
+      result.innerHTML = "Você perdeu :(";
+    }
+    // botao restart
+    restartContainer.style.display = "block";
+    restart.style.display = "block";
+    // cards jogador
+    playerScissors.style.display = "none";
+    playerRock.style.display = "none";
   }
 }
